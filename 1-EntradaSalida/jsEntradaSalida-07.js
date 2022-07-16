@@ -8,18 +8,24 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	let numeroUno
-	let numeroDos
-	let resultado
 
+	//variables
+	let numeroUno;
+	let numeroDos;
+	let resultado;
+
+	//tomo datos
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
 
+	//paso texto a enteros
 	numeroUno = parseInt(numeroUno);
 	numeroDos = parseInt(numeroDos);
 
+	//operadores ( + - * / )
 	resultado = numeroUno + numeroDos;
 
+	//mostrar informacion
 	alert(" El resultado es: " + resultado);
 	
 }

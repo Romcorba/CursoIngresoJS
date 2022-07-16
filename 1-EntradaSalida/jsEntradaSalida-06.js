@@ -7,21 +7,26 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	let numeroUno;
-	let numeroDos;
+	//declarar variables
+	let dolarOFicial;
+	let dolarBlue;
 	let resultado;
+	let variacionPorcentual;
+	
 
-	numeroUno = document.getElementById("txtIdNumeroUno").value; 
-	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	//tomar id de los cuadros
+	dolarOFicial = document.getElementById("txtIdNumeroUno").value; 
+	dolarBlue = document.getElementById("txtIdNumeroDos").value;
 
-	//transformamos a enteros con parseInt
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
-
+	//transformamos texto en numeros
+	dolarOFicial = parseInt(dolarOFicial);
+	dolarBlue = parseInt(dolarBlue);
+	
 	//operacion
-	resultado = numeroUno + numeroDos;
+	resultado = (dolarBlue / dolarOFicial) -1;	
+	variacionPorcentual = resultado*100;
 
 	//mostrar resultado
-	alert(" El resultado es: " + resultado);
+	alert(" El aumento es de : " + variacionPorcentual + "%");
 }
 

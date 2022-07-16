@@ -20,7 +20,6 @@ function SacarResto()
 	divisor = document.getElementById("txtIdNumeroDivisor").value;
 
 	//procesos
-
 	dividendo = parseInt(dividendo);
 	divisor = parseInt(divisor);
 

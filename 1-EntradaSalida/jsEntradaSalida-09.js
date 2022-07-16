@@ -1,27 +1,37 @@
-/*
-Lucas Romero
+ /*
+	Lucas Romero
 Div E
-Ejercicio  9 E/S
+Ejercicio  9 bis E/S
+
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
-mostrar el importe con un aumento del 10 %
-en el cuadro de texto "RESULTADO".*/
+mostrar el importe con un aumento
+en el cuadro de texto "RESULTADO".
+
+El usuario debe ingresar el porcentaje del aumento
+y debemos mostrar el valor del porcentaje del aumento 
+por ALERT */ 
 function mostrarAumento()
 {
-	//declaro variable
+	//variables
 	let sueldo;
-	let aumento;
-	let sueldoAumentado;
-
-	//tomo los valores
+	let porcentaje;
+	let aumentoPorcentaje;
+	
+	//tomar id del cuadro
 	sueldo = document.getElementById("txtIdSueldo").value;
+	aumentoPorcentaje = prompt ("ingrese el porcentaje que desea aumentar");
 
-	//paso a numeros
+	//parseo, paso los textos a numeros
 	sueldo = parseInt(sueldo);
+	porcentaje = parseInt(porcentaje);
 
-	//calculo el % del sueldo 
-	aumento = sueldo * (10/100);
-	sueldoAumentado = sueldo + aumento;
+	//calcular el % del sueldo aumentado
+	aumentoPorcentaje = sueldo * (10/100);
 
-	alert (" Su sueldo es " + sueldo + " Su aumento es de " + aumento + " Y su sueldo aumentado es:" + sueldoAumentado);
+	//mostrar resultado en por id en pantalla
+	document.getElementById("txtIdResultado").value = aumentoPorcentaje + sueldo
+
+	alert (" El sueldo es: " + sueldo + " Su aumento es de: " + aumentoPorcentaje);
+ 
 }

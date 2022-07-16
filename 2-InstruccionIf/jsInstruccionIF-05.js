@@ -1,6 +1,23 @@
+/*
+Lucas Romero
+Div E
+INstruccion IF Ej 5
+Al ingresar una edad solo debemos informar si la persona NO es adolescente.
+*/
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+//declaro variable
+let edad;
+//tomo datos y parseo
+edad=document.getElementById("txtIdEdad").value;
+edad=parseInt(edad)
 
-}//FIN DE LA FUNCIÓN
+	if(edad>=18)
+	{
+		alert("No sos adolescente");
+	}
+	else(edad<=17)
+	{
+		alert("Sos adolescente");
+	}
+}
